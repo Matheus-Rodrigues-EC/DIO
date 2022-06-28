@@ -6,7 +6,7 @@ import {
   Pressable, 
   View, 
   SafeAreaView, 
-  Linking
+  Linking,
 } from 'react-native';
 
 const colorGitHub = '#010409';
@@ -49,6 +49,96 @@ export default function App() {
           style={[styles.defaultText, styles.description]}>
           | Developer | JavaScript, ReactJS, PostgreSQL |
         </Text>
+      </View>
+      <View style={styles.history}>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+      </View>
+      <View style={styles.history}>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+      </View>
+      <View style={styles.history}>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+      </View>
+      <View style={styles.history}>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+      </View>
+      <View style={styles.history}>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={[styles.dot, styles.greenLight]}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+      </View>
+      <View style={styles.history}>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
+        <Text style={styles.dot}></Text>
       </View>
       <Pressable onPress={hadlePressGoToGitHub}>
         <View style={styles.button}>
@@ -102,10 +192,26 @@ const styles = StyleSheet.create({
     borderRadius: 10, 
     padding: 20,
     alignItems:'center',
+    marginTop:20,
   },
   textButton:{
     fontSize: 14,
     fontWeight: 'bold',
   },
+  dot:{
+    textAlign: 'center',
+    height: 25,
+    width: 25,
+    backgroundColor: '#073f25',
+    borderRadius: 30,
+    color: 'green',
+  },
+  history:{
+    flexDirection: 'row',
+    alignSelf: 'center',
+  }, 
+  greenLight: {
+    backgroundColor: '#38ae4e',
+  }
 
 });
